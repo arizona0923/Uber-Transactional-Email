@@ -35,7 +35,6 @@
         
     }
     .outer {
-        
         width: 100%;
         max-width: 600px;
         border-spacing:8px;
@@ -52,18 +51,19 @@
         box-shadow: 0 0 25px rgba(0, 0, 0, .15);
         padding-right: 17px;
     }
-    
-    .mini {
-        color:black; 
-        padding-top:0px;
-        padding: 8px;   
-    }
-    .two-columns {
+    .headers {
         text-align: center;
     }
-    .two-columns .column {
+    .headers .head1 {
         width: 100%;
-        max-width: 230px;
+        max-width: 300px;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .headers .head2 {
+        width: 100%;
+        max-width: 200px;
+        font-size: 18px;
         display: inline-block;
         vertical-align: top;
     }
@@ -79,6 +79,7 @@
         font-size:16px;
         letter-spacing: 1px;
         font-weight: bold;
+        text-align: left;
         color:#5352ed;
         padding: 8px;
         border-bottom:1px dashed grey;
@@ -178,17 +179,21 @@
                         <table>
 
                             <tr>
-                                <td class="two-columns">
-                                    <table class="column">
+                                <td class="headers">
+                                    <table class="head1">
                                         <tr>
-                                            <td  class="" style="padding: 8px;">
-                                                <a href="https://www.uber.com/"><img src="https://icons-for-free.com/download-icon-uber-1324440247504689178_512.png" alt="uber-logo" width="75px" height="75px"></a>
-            
+                                            <td style="padding: 8px;">
+                                                <a href="https://www.uber.com/"><img src="https://icons-for-free.com/download-icon-uber-1324440247504689178_512.png" alt="uber-logo" width="100px" height="100px"></a>
                                             </td>
-                                            <td class="mini">
-                                                <p>March 20, 2022</p><p>Total: $68.50</p>
-                                                
-                                            </td></tr>
+                                        </tr>
+                                    </table>
+                                    <table class="head2">
+                                        <tr>
+                                            <td style="text-align:right;">
+                                                <p><strong>Date: </strong><span>March 20, 2022</span></p>
+                                                <p><strong>Total: </strong>$68.50</p>
+                                            </td>
+                                        </tr>
                                     </table>
                                 </td>
                             </tr>
@@ -205,13 +210,13 @@
                                 <td>
                                     <h1>Thank you for riding with us!</h1>
                                     <h2 style="font-size:x-large; font-weight:bolder;">Your Sunday Morning Trip With Uber:</h2>
-                                    <img src="https://i.pinimg.com/originals/58/88/ce/5888ce812389dd3690a438cd024631a1.gif" alt="banner" width="100%" style="max-width:600px; border-radius: 25px;">
+                                    <a href="#"><img src="https://i.pinimg.com/originals/58/88/ce/5888ce812389dd3690a438cd024631a1.gif" alt="banner" width="100%" style="max-width:600px; border-radius: 25px;"></a>
                                 </td>
                             </tr>
                         </table>
                     </td>
                 </tr>
-    <!--title & summary-->
+    <!--title & breakdown-->
                 <tr>
                     <td class="breakdown" style="padding: 5px;">
                         <table width="100%">
@@ -294,7 +299,7 @@
                                 <td class="driver-info">
                                     <tr>
                                         <td >
-                                            <h3>You Drove With Jaime!</h3>
+                                            <h3>You Drove With Jaime !</h3>
                                             <p>4.92 Star Rating</p>
                                             <a href="#" style="color: green; border: 1px solid green">Say Thanks With An Extra Tip!</a>
                                         </td>
@@ -303,7 +308,7 @@
                                 <td class="lost-info">
                                     <tr>
                                         <td>
-                                            <h3>Forgot Something?!?</h3>
+                                            <h3>Forgot Something ?!?</h3>
                                             <a href="#">Contact Driver</a>
                                             <a href="#">Contact Uber HQ</a>
                                         </td>
